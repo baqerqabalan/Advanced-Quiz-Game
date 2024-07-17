@@ -1,0 +1,142 @@
+body{
+    font-family:"Roboto", sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: white;
+    box-shadow: 0 8px 16px rgb(0,0,0,0.3);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color:#333333;
+    font-weight: bold;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+#buttons button{
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 22px;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
+}
+#buttons button:hover{
+    background-color: #0069d9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#quiz-section{
+    display: none;
+}
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.option{
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+
+.option:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.option.incorrect{
+    background-color: #dc3545;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.5);
+}
+
+.option.correct{
+    background-color: #28a745;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.5);
+}
+
+#next-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#next-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#timer {
+    font-size: 1rem;
+    margin: 15px 0;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#leaderboard {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#counter {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+    font-weight: bold;
+}
